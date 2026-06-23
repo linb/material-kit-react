@@ -1,5 +1,9 @@
 {
-  "importMap": {},
+  "importMap": {
+    "imports": {
+      "src/": "./src/"
+    }
+  },
   "dependencies": [],
   "fileMap": {},
   "envVars": {},
