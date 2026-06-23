@@ -1,0 +1,24 @@
+{
+  "importMap": {},
+  "dependencies": [
+    {
+      "package": "@iconify/react",
+      "version": "5.2.1"
+    }
+  ],
+  "fileMap": {},
+  "envVars": {},
+  "styleLinks": [],
+  "scriptLinks": [],
+  "inlineScript": "",
+  "inlineStyles": "",
+  "jsConfig": {
+    "reactTier": "classic",
+    "useLocalLib": false,
+    "defaultCDN": "esm",
+    "queryOptions": {
+      "dev": false,
+      "target": "es2022"
+    }
+  }
+}
