@@ -1,11 +1,6 @@
 {
   "importMap": {},
-  "dependencies": [
-    {
-      "package": "@iconify/react",
-      "version": "5.2.1"
-    }
-  ],
+  "dependencies": [],
   "fileMap": {},
   "envVars": {},
   "styleLinks": [],
