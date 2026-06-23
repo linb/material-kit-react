@@ -13,7 +13,7 @@
   "inlineScript": "",
   "inlineStyles": "",
   "jsConfig": {
-    "reactTier": "classic",
+    "reactTier": "edge",
     "useLocalLib": false,
     "defaultCDN": "esm",
     "queryOptions": {
