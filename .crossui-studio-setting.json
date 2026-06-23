@@ -1,7 +1,7 @@
 {
   "importMap": {
     "imports": {
-      "src/": "./src/"
+      "src/": "/src/"
     }
   },
   "dependencies": [],
