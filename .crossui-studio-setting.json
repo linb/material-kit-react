@@ -2,15 +2,18 @@
   "importMap": {},
   "dependencies": [],
   "fileMap": {},
+  "publicDir": "public",
+  "base": "/",
   "envVars": {},
   "styleLinks": [],
   "scriptLinks": [],
   "inlineScript": "",
   "inlineStyles": "",
   "jsConfig": {
-    "reactTier": "edge",
+    "reactTier": "modern",
     "useLocalLib": false,
     "defaultCDN": "esm",
+    "warmDynamicImports": true,
     "queryOptions": {
       "dev": false,
       "target": "es2022"
