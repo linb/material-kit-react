@@ -10,7 +10,7 @@
   "inlineScript": "",
   "inlineStyles": "",
   "jsConfig": {
-    "reactTier": "modern",
+    "reactTier": "edge",
     "useLocalLib": false,
     "defaultCDN": "esm",
     "warmDynamicImports": true,
