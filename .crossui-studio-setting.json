@@ -1,6 +1,55 @@
 {
-  "importMap": {},
-  "dependencies": [],
+  "importMap": {
+    "imports": {
+      "src/": "/src/"
+    }
+  },
+  "dependencies": [
+    {
+      "package": "@fontsource-variable/dm-sans",
+      "version": "5.2.5"
+    },
+    {
+      "package": "@fontsource/barlow",
+      "version": "5.2.5"
+    },
+    {
+      "package": "@iconify/react",
+      "version": "5.2.1"
+    },
+    {
+      "package": "apexcharts",
+      "version": "4.5.0"
+    },
+    {
+      "package": "dayjs",
+      "version": "1.11.13"
+    },
+    {
+      "package": "es-toolkit",
+      "version": "1.34.1"
+    },
+    {
+      "package": "minimal-shared",
+      "version": "1.0.7"
+    },
+    {
+      "package": "react-apexcharts",
+      "version": "1.7.0"
+    },
+    {
+      "package": "react-router-dom",
+      "version": "7.4.1"
+    },
+    {
+      "package": "simplebar-react",
+      "version": "3.3.0"
+    },
+    {
+      "package": "react-router",
+      "version": "7.4.1"
+    }
+  ],
   "fileMap": {},
   "publicDir": "public",
   "base": "/",
@@ -10,13 +59,126 @@
   "inlineScript": "",
   "inlineStyles": "",
   "jsConfig": {
-    "reactTier": "edge",
-    "useLocalLib": false,
+    "reactTier": "modern",
+    "useLocalLib": true,
     "defaultCDN": "esm",
     "warmDynamicImports": true,
     "queryOptions": {
       "dev": false,
-      "target": "es2022"
+      "target": "es2020"
+    },
+    "jsx": "automatic"
+  },
+  "projectWrappers": [
+    {
+      "id": "router",
+      "label": "RouterProvider",
+      "importLines": [
+        "import { MemoryRouter, createMemoryRouter, RouterProvider } from \"react-router-dom\";"
+      ],
+      "hoist": null,
+      "render": "<MemoryRouter>{children}</MemoryRouter>",
+      "dataRouterRender": true,
+      "origin": {
+        "file": "src/main.tsx",
+        "start": 648,
+        "end": 682
+      }
+    },
+    {
+      "id": "ThemeProvider",
+      "label": "ThemeProvider",
+      "importLines": [
+        "import { ThemeProvider } from \"src/theme/theme-provider\";"
+      ],
+      "hoist": null,
+      "render": "<ThemeProvider>{children}</ThemeProvider>",
+      "dataRouterRender": false,
+      "origin": {
+        "file": "src/app.tsx",
+        "start": 903,
+        "end": 979
+      }
     }
-  }
+  ],
+  "fileDecorations": {
+    "src/sections/overview/view/overview-analytics-view.tsx": {
+      "wrappers": [],
+      "vars": {},
+      "imports": [],
+      "projectExcluded": []
+    },
+    "src/app.tsx": {
+      "wrappers": [],
+      "vars": {},
+      "imports": [],
+      "projectExcluded": []
+    },
+    "src/routes/sections.tsx": {
+      "wrappers": [],
+      "vars": {},
+      "imports": [],
+      "projectExcluded": [],
+      "infileImports": null,
+      "slots": []
+    },
+    "src/pages/dashboard.tsx": {
+      "wrappers": [],
+      "vars": {},
+      "imports": [],
+      "projectExcluded": [
+        "ThemeProvider"
+      ],
+      "infileImports": null,
+      "slots": []
+    },
+    "src/sections/overview/analytics-news.tsx": {
+      "wrappers": [],
+      "vars": {
+        "Item": {
+          "item": {
+            "title": "title"
+          }
+        }
+      },
+      "imports": [],
+      "projectExcluded": [
+        "ThemeProvider"
+      ],
+      "infileImports": null,
+      "slots": []
+    },
+    "src/sections/overview/analytics-current-visits.tsx": {
+      "wrappers": [],
+      "vars": {
+        "AnalyticsCurrentVisits": {
+          "chart": {
+            "series": []
+          }
+        }
+      },
+      "imports": [],
+      "projectExcluded": [],
+      "infileImports": {
+        "interceptor": {
+          "src/components/chart": "xui-mock://safe-placeholder"
+        },
+        "override": {}
+      },
+      "slots": []
+    },
+    "src/sections/blog/view/blog-view.tsx": {
+      "wrappers": [],
+      "vars": {
+        "BlogView": {
+          "posts": []
+        }
+      },
+      "imports": [],
+      "projectExcluded": [],
+      "infileImports": null,
+      "slots": []
+    }
+  },
+  "schemaVersion": 1
 }
